@@ -11,7 +11,7 @@ meow=(223,34,233)
 
 #creating Window
 gameWindow=pygame.display.set_mode((1200, 600))
-pygame.display.set_caption("meow game")
+pygame.display.set_caption("meow games")
 pygame.display.update()
 
 
@@ -30,8 +30,8 @@ def welcome():
     exit_game=False
     while not exit_game:
         gameWindow.fill(meow)
-        textdisplay("Welcome to my Meow Snake game", black, 200,300)
-        textdisplay("Press Space to start the game", black, 220,350)
+        textdisplay("Welcome to My Meow Snake game", black, 200,300)
+        textdisplay("Press Space to start", black, 220,350)
         for event in pygame.event.get():
             if event.type==pygame.QUIT:
                 pygame.quit()
